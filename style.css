@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Montserrat&family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+  }
+  html, body{
+    height: 100%;
+  }
+  .container{
+    min-height: 100%;
+    background-image: url(./images/grassBACKGROUND.jpg);
+
+  }
+  .showcaseHome{
+      margin-top: 5px;
+      background-image: url(./images/showcaseFLAG.jpg);
+      background-size: cover;
+      background-position-y: -280px;
+      background-repeat: no-repeat;
+      height: 500px;
+      border-bottom: red solid 7px;
+      box-shadow: 0px 5px 0px black;
+  }
+  .showcasePlayers{
+    margin-top: 5px;
+    background-image: url(./images/showcaseBUILDING.jpg);
+    background-size: cover;
+    background-position-y: -280px;
+    background-repeat: no-repeat;
+    height: 500px;
+    border-bottom: red solid 7px;
+    box-shadow: 0px 5px 0px black;
+}
+
+  .main{
+    overflow: auto;
+    margin: 5px auto 20px auto;
+    padding: 0 0 80px 0;
+    width: 1200px;
+    background-color: white;
+    border-left: 5px black solid;
+    border-right: 5px black solid;
+  }
+  .main-container{
+      margin: 0 200px;
+  }
+  /*Header*/
+  header{
+    width: 100%;
+    height: 120px;
+    /* background: linear-gradient(to right, #013E5C, #9AD7F5); */
+    background-color: #152c66;
+    display: block;
+    box-shadow: 0px 5px 0px black;
+    border-bottom: 7px red solid;
+  
+  }
+  .inner-header{
+    width: 80vw;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .logo-container{
+    height: 100%;
+    float: left;
+  }
+  .logo-container h1{
+    font-family: 'Exo', sans-serif;
+    font-size: 35px;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 100;
+    user-select: none;
+  }
+  .logo-container h1 span{
+    font-weight: 800;
+  }
+  #logoimg{
+      height: 108px;
+      margin: 6px 0 6px 0;
+      padding: 0;
+    }
+  .nav{
+    margin-left: 150px;
+    display: block;
+    height: 100%;
+    
+  }
+  .nav a{
+    display: table;
+    height: 100%;
+    float: left;
+    
+  }
+  .nav a li{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 24px;
+    color: white;
+    padding: 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    position: relative;
+    list-style: none;
+  }
+  .nav a li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background: currentColor;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+ 
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  }
+  .nav a li:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  .adios{
+    float: right;
+    width: 80px;
+    margin: 20px;
+  }
+/*Homepage*/
+
+  .valkommen{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .valkommen h1{
+    font-size: 45px;
+  }
+  .valkommen h1 span{
+    font-weight: bold;
+    font-family: 'Exo 2', sans-serif;
+  }
+  .valkommen p{
+    font-size: 25px;
+  }
+  .valkommen ul{
+    list-style: none;
+
+  }
+  .vara-budord{
+    margin-bottom: 15px;
+  }
+  .vara-budord p{
+    font-size: 18px;
+  }
+  .vara-budord ul{
+    margin-left: 25px;
+    font-size: 20px;
+    width: 700px;
+  }
+  .vara-budord ul li{
+    margin: 2px 0 2px 0;
+  }
+  .hur-gar-jag-med p{
+    font-size: 18px;
+  }
+  .titlelist{
+    font-size: 23px;
+    margin: 10px 0;
+  }
+  .valkommen ul a{
+    color: rgb(12, 12, 102);
+    font-size: 18px;
+    text-decoration: underline;
+    margin: 0px;
+    text-align: center;
+    width: 50%;
+  }
+  .valkommen ul a li{
+    width: 400px;
+    margin: 10px auto;
+    display: block;
+  }
+  .valkommen ul a:hover{
+    color: red;
+  }
+  .valkommen ul a:visited{
+    color: none;
+  }
+  .homeIMG1P{
+      width: 100%;
+      margin: 40px 0;
+  }
+  .homeIMG1{
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+  }
+/* Player Page */
+.spelare{
+
+  margin-bottom: 20px;
+}
+.spelare h1{
+  font-size: 32px;
+}
+.spelareIMG{
+  width: 500px;
+  margin-top: 10px;
+  border: 2px black solid;
+}
+.spelare p{
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: justify;
+  width: 700px;
+}
+.spelare h2{
+  margin: 10px 0 5px 0;
+  font-size: 27px;
+}
+.spelare ul{
+  margin-left: 25px;
+  font-size: 20px;
+  width: 700px;
+}
+.spelare ul li{
+  margin: 2px 0 2px 0;
+}
+.spelare ul li span{
+  font-weight: bold;
+}
+.sausage{
+  width: 100px;
+}
+.vill-du-soka-in{
+  margin-bottom: 20px;
+}
+.vill-du-soka-in h1{
+  font-size: 30px;
+}
+.vill-du-soka-in p{
+  margin-bottom: 10px;
+}
+.vill-du-soka-in a{
+  color: rgb(12, 12, 102);
+  font-size: 23px;
+  
+  text-decoration: underline;
+  margin: 0px;
+  list-style: none;
+  width: 50%;
+}
+.vill-du-soka-in a li{
+  font-family: 'Exo 2', sans-serif;
+  list-style: none;
+  text-decoration: underline;
+}
+.vill-du-soka-in li{
+  font-family: 'Exo 2', sans-serif;
+  list-style: none;
+  display: inline-block;
+  font-size: 23px;
+  color:rgb(12, 12, 102);
+}
+/* About us Page */
+.var-historia{
+  margin-bottom: 15px;
+}
+.var-historia img{
+  float: right;
+  width: 300px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.var-historia p a{
+  color: rgb(5, 8, 161);
+  text-decoration: underline;
+}
+.about-p1{
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.about-p2{
+  text-align: justify;
+}
+/* Schema Page */
+.schema{
+  margin-bottom: 15px;
+}
+.schema h1{
+  font-size: 30px;
+}
+.schema p{
+  font-size: 18pX;
+  text-align: justify;
+}
+.schema ul{
+  font-size: 22px;
+
+  margin: 10px 0 10px 25px;
+}
+/*Footer*/
+footer{
+  width: 100%;
+  height: 80px;
+  background: #152c66;
+  margin-bottom: 0;
+  margin-top: -80px;
+
+  display: table;
+  box-shadow: 0px -5px 0px black;
+  border-top: 7px red solid;
+}
+footer p{
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  height: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+/* Mobile And Tablet View! */
+@media only screen and (max-width: 1403px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background:white;
+    width: 100%;
+  }
+  .adios{
+    display: none;
+  }
+  .container{
+    width: 100%;
+    background-image: none;
+  }
+  .showcaseHome, .showcasePlayers{
+    display: none;
+  }
+  .main{
+    width: 90%;
+    border: none;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+  }
+  .main-container{
+    margin: 0;
+  }
+  footer{
+    width: 100%;
+    height: 12vh;
+    margin: 5px 0 0 0;
+  }
+  header{
+    width: 100%;
+    height: 14vh;
+  }
+  .logo-container{
+    width: 100%;
+  }
+  #logoimg{
+    height: 90px;
+    margin: 2vh auto;
+    display: block;
+  }
+  .inner-header{
+    margin: 0;
+    width: 100%;
+  }
+  .nav{
+    display: block;
+    background: #152c66;
+    float: right;
+    height: 332;
+    width: 100%;
+    margin: 12px auto 5px auto;
+    text-align: Center;
+  }
+  .nav a{
+    height: 35px;
+    width: 100%;
+    border-bottom: black 3px solid;
+  }
+  .nav a li{
+    font-size: 35px;
+    line-height: 80px;
+
+  }
+  /* Spelaresidan */
+  .valkommen ul a li{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  .homeIMG1P{
+    width: 95%;
+    margin: 40px auto;
+  }
+  .spelare{
+    width: 100%;
+  }
+  .spelareIMG{
+    width: 95%;
+    margin: 10px auto 0 auto;
+    display: blocK;
+  }
+  .spelare h1{
+    width: 95%;
+    margin: 0 auto;
+  }
+  .spelare p{
+    width: 95%;
+    margin: 10px auto 0 auto;
+  }
+  .spelare h2{
+    width: 95%;
+    margin: 10px auto 5px auto;
+  }
+  .spelare ul{
+    width: 90%;
+    margin-left: 30px;
+  }
+  .vill-du-soka-in{
+    width: 95%;
+    margin: 0 auto 30px auto;
+  }
+  .vill-du-soka-in h1{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 25px;
+  }
+  .vill-du-soka-in p{
+    font-size: 20px;
+  }
+  /* About Us Page */
+  .var-historia img{
+    display: none;
+  }
+  .var-historia p{
+    font-size: 18px;
+  }
+  /* Schema Page */
+  .schema{
+    width: 95%;
+    margin: 0 auto 15px auto;
+  }
+}
